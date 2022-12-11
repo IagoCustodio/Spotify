@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Arial, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 50px;
+    
+    
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+;
+
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+.playlist-container{
+    display: flex;
+    height: 85vh;
+    width: 100%;
+
+}
+.playlist{
+    background-color: black;
+    width: 20%;
+   overflow: hidden;
+
+
+}
+.playing{
+    background: linear-gradient(#505053,#181818);
+    overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;   
+}
+
+.logo{
+    height: 40px;
+    margin: 20px;
+}
+.playlist-card{
+   display: flex;
+   padding: 5px 15px;
+}
+.playlist-main-content-header{
+    margin: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.track-list{
+    overflow: scroll;
+    height: 60vh;
+    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+}
+.tracks-played{
+    color: white;
+    font-weight: 400;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid rgb(53, 52, 52);
+    border-radius: 20px;
+
+}
+.fas{
+    color: white;
+    height: 20px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.playlist-main-content{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+.top-header{
+    
+    background: linear-gradient(#505053,#181818);
+}
+.header-icons{
+    display: flex;
+    justify-content: space-between;
+    padding:20px ;
+}
+.playlist-image-container{
+    padding: 20px;
+    display: flex;
+    
+}
+.image-playlist{
+    margin-top: 5px;
+    margin-right: 10px;
+
+    height: 150px;
+    
+}
+/* .image-data{
+
+} */
+.data  {
+    color: white;
+    margin-top: 10px;
+}
+/* .a{
+
+} */
+.play-buttons{
+    margin: 10px;
+    align-items: center;
+    color: white;
+    
+}
+.fa-play-circle{
+    color: #1ed761; 
+    
+}
+
+
+.fa-heart{
+    color: #1ed761;
+
+}
+.playing-songs{
+    overflow: hidden;
+    width: 90%;
+    margin-left: 10px;
+
+}
+.playing-songs-container{
+    margin: 10px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.songs-container1{
+    display: flex;
+    color: white;
+}
+.icon-music{
+    margin-top: 5px;
+}
+.songs-details{
+    font-size: 10px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+.songs-text{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+    height: 100px;
+    border-top: 1px solid #282828;
+
+}
+.player-content-1{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.palyer-image{
+    padding-left: 10px;
+    height: 60px;
+}
+.player-text h3 {
+padding-left: 10px;
+font-size: 20px;
+color: white;
+}
+
+.player-text h4{
+font-size:10px;
+opacity: 0.5;
+padding-left: 10px;
+color: rgb(221, 216, 216);
+font-weight: 300;
+
+
+}
+.player-icons{
+    padding-left: 20px;
+}
+.player-content-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+    
+}
+
+.playerslider{
+    display: flex;
+    align-items: center;
+
+
+}
+.timer{
+    padding-inline: 5px;
+    color: white;
+    font-size: 15px
+    ;
+    
+}
+.timeline{
+    width: 500px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.player-content-3{
+    display: flex;
+    align-items: center;
+    padding-inline-end: 20px;
+}
+
+h2:hover {
+    color: #1ed761;
+    cursor: pointer;
+
+}
+h3:hover {
+    color: #1ed761;
+    cursor: pointer;
+
+}
+
+.bottom{
+    align-items: center;
+    margin-right: 80%;
+}
+
+input{
+    width: 100%;
+    align-items: center;
+}
+
+span{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container aside{
+    width: 20%;
+    height: 100vh;
+    background-color: #000000;
+    padding: var(--padding);
+}
+.container aside .menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container aside .menu a{
+    margin-left: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 1rem;
+    color: #c5c5c5;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.container aside .menu a span{
+    margin-right: 8px;
+}
+.container aside .menu a.active{
+    width: 200px;
+    background-color: #282828;
+    border-radius: 5px;
+    color: #ffffff;
+    
+}
+.container aside .menu a:hover{
+    color: #ffffff;
+}
+.container section{
+    width: 80%;
+    height: 100vh;
+    color: #ffffff;
+    background-color: var(--fondo);
+    overflow-y: scroll;
+    padding-bottom: 5rem;
+}
+
+.container section::-webkit-scrollbar:vertical{
+    width: 7px;
+}
+.container section::-webkit-scrollbar-thumb{
+    background-color: #797979;
+}
+.container section header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: var(--padding);
+    width: 80%;
+    background-color: #505053;
+    z-index: 2;
+}
+.container section header .botones_prev_next,.container section header .suscribcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container section header .botones_prev_next span{
+    cursor: pointer;
+}
+.container section header .botones_prev_next span.btn_prev{
+    margin-right: 1em;
+}
+.container section header .suscribcion .mejora_cuenta{
+    margin-right: 1.5em;
+}
+.container section header .suscribcion .mejora_cuenta button{
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    width: 250px;
+    padding: 0.8em 0;
+    color: #ffffff;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .2s;
+}
+.container section header .suscribcion .mejora_cuenta button:hover{
+    transform: scale(1.1);
+}
+.container section header .suscribcion .perfil{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    width: auto;
+    padding: .4em 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+.container section header .suscribcion .perfil .circulo{
+    background-color: #333333;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
